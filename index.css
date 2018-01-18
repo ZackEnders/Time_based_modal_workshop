@@ -45,10 +45,6 @@ html{
 }
 
 .subscribe {
-/*	position: fixed;
-	left: 50%;
-	top: 20px;*/
-/*	transform: translate(-50%);*/
 	margin-top: 15px;
 	background-color: teal;
 	font-size: 32px;
@@ -63,9 +59,11 @@ html{
   background: rgba(0, 0, 0, 0.7);
   display: none;
 }
-h1 {
+.name {
+	text-align: center;
+	color: white;
 	display: inline-block;
-	margin: 15px auto;
+	margin: 15px 0;
 }
 .box {
 	width: 100px;
@@ -100,6 +98,26 @@ h1 {
 	display: block;
 	color: black;
 }
+.img {
+	width: 60%;
+	margin: 0 auto;
+}
+.img img{
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+}
+.wrapper {
+	width: 800px;
+	margin: 0 auto;
+	background-color: black;
+	opacity: .6;
+}
+
+.text {
+	color: white;
+	text-align: center;
+}
 
 html {
   background: url('img/background.jpeg') no-repeat center center fixed;
@@ -109,12 +127,20 @@ html {
 
 
 @media all and (max-width: 480px) {
+
+	.wrapper {
+		width: 80%;
+	}
 	
 	.nav-bar li {
 		margin: 0 auto;
 		display: block;
 		width: 250px;
 		height: 40px;
+	}
+
+	.img {
+		width: 80%;
 	}
 
 }
@@ -126,6 +152,7 @@ html {
 		height: 40px;
 	}
 }
+
 
 
 @media all and (max-width: 992px) and (min-width: 769px){
