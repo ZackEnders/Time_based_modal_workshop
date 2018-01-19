@@ -4,7 +4,8 @@
 }
 
 html{
-	background-color: black;
+	background: url('img/background.jpeg') no-repeat center center fixed;
+    background-size: cover;
 }
 .modal {
 	position: fixed;
@@ -45,27 +46,25 @@ html{
 }
 
 .subscribe {
-/*	position: fixed;
-	left: 50%;
-	top: 20px;*/
-/*	transform: translate(-50%);*/
 	margin-top: 15px;
 	background-color: teal;
 	font-size: 32px;
 }
 #modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 50;
-  background: rgba(0, 0, 0, 0.7);
-  display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 50;
+	background: rgba(0, 0, 0, 0.7);
+	display: none;
 }
-h1 {
+.name {
+	text-align: center;
+	color: white;
 	display: inline-block;
-	margin: 15px auto;
+	margin: 15px 0;
 }
 .box {
 	width: 100px;
@@ -100,32 +99,78 @@ h1 {
 	display: block;
 	color: black;
 }
+.img {
+	width: 60%;
+	margin: 0 auto;
+}
+.img img{
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+}
+.wrapper {
+	width: 600px;
+	margin: 0 auto;
+	background-color: black;
+	opacity: .8;
+	border-right: 5px;
+}
 
-html {
-  background: url('img/background.jpeg') no-repeat center center fixed;
-  background-size: cover;
-  }
+.text {
+	color: white;
+	text-align: center;
+}
 
+.desc {
+	padding: 15px;
+	text-align: center;
+}
+.gallery {
+	width: 50%;
+	border: 2px solid black;
+	display: block;
+	background-color: white;
+	margin: 10px auto;
+}
+.gallery img {
+	width: 100%;
+	height: auto;
+}
 
 
 @media all and (max-width: 480px) {
+
+.wrapper {
+	width: 80%;
+}
 	
-	.nav-bar li {
-		margin: 0 auto;
-		display: block;
-		width: 250px;
-		height: 40px;
-	}
+.nav-bar li {
+	margin: 0 auto;
+	display: block;
+	width: 250px;
+	height: 40px;
+}
+
+.gallery {
+	width: 80%;
+}
+
 
 }
 
 @media all and (max-width: 768px) and (min-width: 481px) {
 
-	.nav-bar li {
-		width: 110px;
-		height: 40px;
-	}
+.nav-bar li {
+	width: 110px;
+	height: 40px;
 }
+
+.gallery {
+	width: 70%;
+}
+
+}
+
 
 
 @media all and (max-width: 992px) and (min-width: 769px){
