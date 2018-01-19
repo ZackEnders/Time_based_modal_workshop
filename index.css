@@ -4,7 +4,8 @@
 }
 
 html{
-	background-color: black;
+	background: url('img/background.jpeg') no-repeat center center fixed;
+    background-size: cover;
 }
 .modal {
 	position: fixed;
@@ -50,14 +51,14 @@ html{
 	font-size: 32px;
 }
 #modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 50;
-  background: rgba(0, 0, 0, 0.7);
-  display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 50;
+	background: rgba(0, 0, 0, 0.7);
+	display: none;
 }
 .name {
 	text-align: center;
@@ -108,10 +109,11 @@ html{
 	width: 100%;
 }
 .wrapper {
-	width: 800px;
+	width: 600px;
 	margin: 0 auto;
 	background-color: black;
-	opacity: .6;
+	opacity: .8;
+	border-right: 5px;
 }
 
 .text {
@@ -119,38 +121,54 @@ html{
 	text-align: center;
 }
 
-html {
-  background: url('img/background.jpeg') no-repeat center center fixed;
-  background-size: cover;
-  }
-
+.desc {
+	padding: 15px;
+	text-align: center;
+}
+.gallery {
+	width: 50%;
+	border: 2px solid black;
+	display: block;
+	background-color: white;
+	margin: 10px auto;
+}
+.gallery img {
+	width: 100%;
+	height: auto;
+}
 
 
 @media all and (max-width: 480px) {
 
-	.wrapper {
-		width: 80%;
-	}
+.wrapper {
+	width: 80%;
+}
 	
-	.nav-bar li {
-		margin: 0 auto;
-		display: block;
-		width: 250px;
-		height: 40px;
-	}
+.nav-bar li {
+	margin: 0 auto;
+	display: block;
+	width: 250px;
+	height: 40px;
+}
 
-	.img {
-		width: 80%;
-	}
+.gallery {
+	width: 80%;
+}
+
 
 }
 
 @media all and (max-width: 768px) and (min-width: 481px) {
 
-	.nav-bar li {
-		width: 110px;
-		height: 40px;
-	}
+.nav-bar li {
+	width: 110px;
+	height: 40px;
+}
+
+.gallery {
+	width: 70%;
+}
+
 }
 
 
